@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import "tailwindcss";
+
+*{
+  font-family: "Outfit", sans-serif;
+}
+body{
+  background-color:rgba(25, 11, 1, 0.927);
+}
+/* .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: sticky;
+  top: 0;                 
+  z-index: 1000;          
+  background: linear-gradient(135deg, #7c3aed2b 0%, #ffa305bb 100%);
+  border: solid 1px black;
+} */
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(135deg, #5a2d2d 0%, #d88a06 100%);
+  border: solid 1px black;
+}
+.logo-title {
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.h-name{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #feef18;
+}
+.login-container{
+    margin-top: 50px;
+  margin-left: 550px;
+  max-width: 400px;
+  padding: 20px;
+  background: linear-gradient(to right, #f18a04da, rgba(255, 132, 0, 0.663));
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.login-title{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #feef18;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.login-txt{
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  border-style: rounded;
+  outline: none;
+  color: rgb(249, 245, 245);
+}
+.new-login-text{
+  text-align:start;
+  margin-top: 5px;
+}
+.login-btn{
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.login-btn:hover{
+  background:linear-gradient(to right, #0d0d0dec,rgba(251, 116, 6, 0.732));
+}
+
+
+
+/* register */
+.reg-container{
+  margin-top: 50px;
+  margin-left: 550px;
+  max-width: 400px;
+  padding: 20px;
+  background: linear-gradient(to right, #f18a04da, rgba(255, 132, 0, 0.663));
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.reg-input{
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  border-style: rounded;
+  outline: none;
+  color: rgb(249, 245, 245);
+}
+.reg-btn{
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.reg-btn:hover{
+  background:linear-gradient(to right, #0d0d0dec,rgba(251, 116, 6, 0.732));
+}
+.reg-title{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #feef18;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* menu */
+.menu-title{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #feef18;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.menu-desc{
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: yellow;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* menu card */
+.menu-card-container{
+  width: 100%;
+  
+  margin: 0 auto;
+  padding: 20px 30px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: grid;
+  grid-template-columns: repeat(4 ,1fr);
+  gap: 16px;
+}
+.menu-card{
+  background-color: rgba(204, 203, 203, 0.8);
+  border-radius: 8px;
+  position: relative;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.menu-card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.menu-card-image{
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.menu-card-btn{
+  margin-top: auto;   
+  width: 100%;
+  padding: 8px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+.menu-card-btn:hover {
+  background-color: green;
+}
+@media (max-width: 1024px) {
+  .menu-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .menu-card-container {
+    grid-template-columns: 1fr;  /* ← mobile-ல் single column */
+  }
+}
+.cart-container{
+  width: 100%;
+  padding: 20px 40px;
+}
+.cart-title{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #feef18;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.cart-items{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #7c3aed2b 0%, #ffa305bb 100%);
+  
+}
+.cart-item{
+  background-color: rgba(22, 22, 22, 0.33);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.cart-item h3{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.cart-item p{
+  font-size: 1rem;
+  color: #555;
+}
+
+.total-price{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.place-order-btn{
+  margin-top: 20px;
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.place-order-btn:hover{
+  background-color: #0d0d0d;
+} 
+
+.foot-container{
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #7c3aed99 0%, #ffa305 100%);
+  border: solid 1px black;
+}
+
+.my-orders-container{
+  width: 100%;
+  padding: 20px 40px;
+  /* background-color: #251504; */
+}
+.my-order-title{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #feef18;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.my-orders-list{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #7a30f9cb 0%, #ffa305ef 100%);
+}
+
+.admin-container{
+  background:rgba(255, 255, 255, 0.84);
+  color:black;
+}
+
+.light-mode {
+  background-color:rgb(249, 247, 245);
+  color: black;
+  min-height: 100vh;
+}
+
+.dark-mode {
+   background-color: #0c111c;
+  color: white;
+  min-height: 100vh;
+}
+.tog-btn{
+   width: 70px;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  
+}
