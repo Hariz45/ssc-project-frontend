@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "../api/api";
 import { useAuth } from "../Context/AuthContext";
-import { formatDate } from "../utils/helpers";
+import { formatDate } from "../utils/helpers"
 
 function MyOrders() {
   const [orders, setOrders] = useState([]);
