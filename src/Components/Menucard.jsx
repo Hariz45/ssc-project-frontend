@@ -20,7 +20,7 @@
 
 // export default MenuCard;
 
-import { formatPrice } from "../utils/helpers";
+import { formatPrice } from "../Utils/helpers";
 
 function MenuCard({ item, onAddToCart }) {
   return (
