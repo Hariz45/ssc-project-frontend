@@ -39,7 +39,7 @@ function Menu() {
       <div className="foot-container">
         <footer>
         <p>📞 +91 98765 43210 &nbsp;|&nbsp; 📍 Coimbatore, Tamil Nadu</p>
-        <p>© 2026 Sivam Susi A to Z Catering Services</p>
+        <p>© 2026 SSC A to Z Catering Services</p>
       </footer>
       </div>
     </div>
