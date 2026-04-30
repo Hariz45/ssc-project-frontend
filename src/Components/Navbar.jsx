@@ -31,10 +31,6 @@ function Navbar({toggleTheme}) {
 
         {user?.role === "admin" && <Link to="/admin">Admin</Link>}
 
-        <button className="tog-btn" onClick={toggleTheme}>
-          Theme
-        </button>
-
         {token && (
           <button
             onClick={handleLogout}

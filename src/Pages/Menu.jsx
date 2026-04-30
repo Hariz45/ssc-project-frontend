@@ -27,7 +27,7 @@ function Menu() {
   if (loading) return <Loader />;
 
   return (
-    <div>
+    <div className="m-cont">
       <h2 className="menu-title">Menu</h2>
       <h3 className="menu-desc">Explore Our Delicious Options</h3>
       <div className="menu-card-container" >
