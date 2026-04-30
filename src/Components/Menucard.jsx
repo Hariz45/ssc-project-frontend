@@ -35,6 +35,7 @@ function MenuCard({ item, onAddToCart }) {
       <p className="text-sm text-gray-600 mt-1">Category: {item.category}</p>
       <p className="text-sm font-medium mt-1">{formatPrice(item.price)}</p>
       <p className="text-sm text-gray-700 mt-2">{item.description}</p>
+      <img src={item.image} alt={item.name} className="w-full h-40 object-cover rounded-lg" />
 
       <button
         onClick={() => onAddToCart(item)}

@@ -33,6 +33,7 @@ function Menu() {
       <div className="menu-card-container" >
         {menu.map((item) => (
           <MenuCard key={item._id} item={item} onAddToCart={addToCart} />
+          
         ))}
       </div>
 

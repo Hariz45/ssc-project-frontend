@@ -15,6 +15,7 @@ function Admin() {
     category: "",
     price: "",
     description: "",
+    image: "",
   });
 
   useEffect(() => {
@@ -82,6 +83,7 @@ function Admin() {
         category: "",
         price: "",
         description: "",
+        image:"",
       });
 
       fetchMenu();
